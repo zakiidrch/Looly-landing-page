@@ -1,0 +1,439 @@
+/********** Google font **********/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/********** Global properties **********/
+/********** css variable **********/
+:root {
+    --dark-background: 	hsl(215, 28%, 17%);
+    --text-color: 	hsl(90, 17%, 98%);
+    --btn-color: hsl(217, 91%, 59%);
+
+    --padding-section: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/********** start hero **********/
+.hero {
+    background-color: var(--dark-background);
+}
+/********** start header **********/
+header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+
+    color: var(--text-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+
+    color: #e5e7eb;
+
+    transition: all .3s;
+}
+
+nav li a:hover {
+    color: #fff;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.fa-xmark {
+    display: none;
+}
+/********** end header **********/
+/********** start main **********/
+main {
+    padding: var(--padding-section) 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+
+    color: var(--text-color);
+}
+
+.hero-text p {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+
+    color: #e5e7eb;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--btn-color);
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all .3s;
+}
+
+.hero-text button:hover {
+    background-color: var(--text-color);
+    color: var(--btn-color);
+}
+
+.hero-image {
+    flex: 1.2;
+}
+
+.hero-image img {
+    width: 100%;
+}
+/********** end main **********/
+/********** end hero **********/
+/********** start information **********/
+.info {
+    padding: var(--padding-section) 0;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 36px;
+    color: #1f2937;
+
+    margin-bottom: 40px;
+}
+
+.info .boxes {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.info .box{
+    width: 200px;
+    height: 200px;
+}
+
+.info .box-image {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.info .box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info p {
+    min-width: 100%;
+}
+/********** end information **********/
+/********** start quote **********/
+.quote {
+    padding: var(--padding-section) 0;
+
+    background-color: #e5e7eb;
+}
+
+.quote .quote-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.quote q {
+    font-size: 36px;
+    font-weight: 100;
+
+    color: #1f2937;
+}
+
+.quote .author {
+    margin-top: 10px;
+    margin-right: 50px;
+    text-align: right;
+
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: #1f2937;
+}
+/********** end quote **********/
+/********** start call to action **********/
+.call-to-action {
+    padding: var(--padding-section) 0;
+}
+
+.call-to-action .sign-up {
+    background-color: var(--btn-color);
+
+    padding: 50px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.sign-up__text h3 {
+    font-size: 24px;
+    font-weight: 900;
+
+    margin-bottom: 5px;
+
+    color: var(--text-color);
+}
+
+.sign-up__text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: var(--text-color);
+    max-width: 100%;
+}
+
+.sign-up__btn {
+    background: none;
+
+    padding: 10px 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+
+    transition: all .3s;
+}
+
+.sign-up__btn:hover {
+    background-color: var(--text-color);
+    color: var(--btn-color);
+}
+/********** end call to action **********/
+/********** start footer **********/
+footer {
+    padding: 20px 0;
+
+    background-color: var(--dark-background);
+    color: var(--text-color);
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;    
+}
+/********** end footer **********/
+/********** start media queries **********/
+@media (max-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+    /********** start main **********/
+    main {
+        gap: 50px;
+    }
+    /********** end main **********/
+    /********** start info **********/
+    .info .boxes {
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .info .box{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .info .box-image {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    /********** start info **********/
+    /********** start call to action **********/
+    .call-to-action .sign-up {
+        max-width: 85%;
+    }
+
+    .sign-up__text p {
+        max-width: 80%;
+    }
+    /********** end call to action **********/
+}
+@media(max-width: 768px) {
+    /********** start header **********/
+    .fa-bars {
+        font-size: 26px;
+        color: white;
+        display: inherit;
+    }
+
+    nav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: white;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+
+        transform: translateX(100%);
+        transition: transform .5s;
+    }
+
+    nav .fa-xmark {
+        display: block;
+        margin-top: 50px;
+
+        font-size: 26px;
+        color: var(--dark-background);
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        transition: all .5s;
+    }
+
+    nav ul li:first-child {
+        margin-top: 50px;
+    }
+
+    nav li a {
+        display: block;
+        color: black;
+        padding: 20px 0;
+    }
+
+    nav li:hover a {
+        background-color: var(--dark-background);
+        color: var(--text-color);
+    }
+
+    .toggle {
+        transition: transform .5s;
+        transform: translateX(0);
+    }
+    /********** end header **********/
+    /********** start main **********/
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text button {
+        width: 40%;
+    }
+    /********** end main **********/
+}
+
+@media(max-width: 576px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /********** start header **********/
+    nav {
+        width: 50%;
+    }
+    /********** end header **********/
+    /********** start info **********/
+    .info .box{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .info .box-image {
+        width: 80%;
+        height: 250px;
+        margin: 0 auto 20px;
+    }
+    
+    .info .box-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /********** end info **********/
+    /********** start quote **********/
+    .quote q {
+        font-size: 30px;
+    }
+    /********** end quote **********/
+    /********** start call to action **********/
+    .sign-up {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .sign-up__text p{
+        margin:  0 auto;
+    }
+
+    .sign-up__btn {
+        width: 50%;
+    }
+    /********** end call to action **********/
+
+}
+/********** end media queries **********/
+
+
